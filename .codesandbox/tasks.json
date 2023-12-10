@@ -8,6 +8,10 @@
       "name": "cd backend",
       "command": "cd backend",
       "runAtStart": true
+    },
+    "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{}' --features '[]'": {
+      "name": "Environment setup",
+      "command": "CSB_RUN_OUTSIDE_CONTAINER=1 devcontainer templates apply --template-id \"ghcr.io/devcontainers/templates/typescript-node\" --template-args '{}' --features '[]'"
     }
   }
 }
